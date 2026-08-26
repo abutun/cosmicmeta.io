@@ -35,9 +35,12 @@ const collections = [
   },
   {
     name: 'War Chicks',
-    state: 'Free mint soon',
+    state: 'Free mint live',
     image: '/assets/collection-war-chicks.png',
+    href: 'https://mint.cosmicmeta.io/',
+    actionLabel: 'Mint War Chicks',
     links: [
+      ['Free mint', 'https://mint.cosmicmeta.io/'],
       ['Coinbase', 'https://nft.coinbase.com/collection/ethereum/0xcadb229d7989aa25d35a8eee7539e08e43c55fe8'],
       ['Rarible', 'https://rarible.com/cosmicmetawarchicks'],
       ['Mintable', 'https://mintable.app/store/Cosmic-Meta-War-Chicks-Cosmic-Meta-Multiverse/0xcadb229d7989aa25d35a8eee7539e08e43c55fe8'],
@@ -47,9 +50,11 @@ const collections = [
   },
   {
     name: 'Circles',
-    state: 'Free mint soon',
+    state: 'Free mint live',
     image: '/assets/collection-circles.png',
-    links: [],
+    href: 'https://mint.cosmicmeta.io/',
+    actionLabel: 'Mint Circles',
+    links: [['Free mint', 'https://mint.cosmicmeta.io/']],
   },
 ]
 
@@ -100,7 +105,7 @@ function CollectionCard({ collection, index }) {
     <div className="collection-shade" />
     <div className="collection-copy">
       <div><h3>{collection.name}</h3><p>{collection.state}</p></div>
-      {collection.href ? <a className="round-arrow" {...external(collection.href)} aria-label={`View ${collection.name} on OpenSea`}><Arrow diagonal /></a> : <span className="coming-orbit" aria-hidden="true" />}
+      {collection.href ? <a className="round-arrow" {...external(collection.href)} aria-label={collection.actionLabel ?? `View ${collection.name} on OpenSea`}><Arrow diagonal /></a> : <span className="coming-orbit" aria-hidden="true" />}
     </div>
     {collection.links.length > 0 && <div className="collection-links">
       <button className="text-button" onClick={() => setShowLinks(!showLinks)} aria-expanded={showLinks}>{showLinks ? 'Close verified links' : 'Verified links'}</button>

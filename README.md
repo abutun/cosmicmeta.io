@@ -23,7 +23,7 @@ npm run build
 
 ## External links
 
-The page links to Cosmic Meta’s social channels, GitBook whitepaper, verified marketplaces, and Etherscan contracts. Marketplace links are exposed from each collection’s **Verified links** control. At the time this site was built, the proposed OpenSea links for War Chicks and Circles returned 404 and are intentionally not displayed.
+The page links to Cosmic Meta’s social channels, GitBook whitepaper, verified marketplaces, and Etherscan contracts. Marketplace links are exposed from each collection’s **Verified links** control. War Chicks and Circles are available as free mints through [mint.cosmicmeta.io](https://mint.cosmicmeta.io/); their proposed OpenSea links are intentionally not displayed while unavailable.
 
 ## Design
 
