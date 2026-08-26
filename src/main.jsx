@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles.css'
+import './archive.css'
 
 const external = (href) => ({ href, target: '_blank', rel: 'noreferrer' })
 
@@ -130,7 +131,7 @@ function App() {
         <h1>The universe is<br/>collecting itself.</h1>
         <p>Collect signals across the Cosmic Meta Multiverse. From molecular structures to pixel artifacts and beyond—each collection is part of something larger.</p>
         <a href="#collections" className="button">Explore collections <Arrow /></a>
-      </div><div className="hero-art" aria-hidden="true"><div className="orbit-line orbit-line-a"/><div className="orbit-line orbit-line-b"/><img src="/assets/cosmic-molecule-hero.png" alt="" fetchPriority="high" decoding="async" /></div>
+      </div><div className="hero-art" aria-hidden="true"><div className="orbit-line orbit-line-a"/><div className="orbit-line orbit-line-b"/><img src="/assets/archive-molecule-profile-cutout.png" alt="" fetchPriority="high" decoding="async" /></div>
       </section>
 
       <section id="collections" className="collections section-grid"><div className="section-intro"><h2>Four signals.<br/><em>One multiverse.</em></h2><p>Distinct collections from across the void. Different forms, same frequency.</p></div>
@@ -141,7 +142,7 @@ function App() {
 
       <section id="roadmap" className="roadmap section-grid"><h2>The next orbit.</h2><div className="timeline" aria-label="Cosmic Meta roadmap"><div className="timeline-line" />{[['01','Molecules','Complete'],['02','Pixel Art','Complete'],['03','War Chicks','Free mint'],['04','Galactica','Staking & DAO']].map(([number, name, status]) => <div className="timeline-item" key={number}><div className="timeline-number">{number}</div><h3>{name}</h3><p>{status}</p></div>)}</div></section>
 
-      <section id="community" className="community section-grid"><div className="community-copy"><h2>Build the <em>next</em><br/>chapter with us.</h2><p>Enter a community of collectors, artists, designers and developers making the Cosmic Meta Multiverse real.</p></div><div className="community-action"><a className="button button-outline" {...external('https://discord.gg/VDpPSrwRvu')}>Enter the community <Arrow diagonal /></a><div className="social-links"><a {...external('https://twitter.com/CosmicMetaX')}>X / Twitter</a><a {...external('https://instagram.com/CosmicMetaDigital')}>Instagram</a><a {...external('https://discord.gg/VDpPSrwRvu')}>Discord</a><a {...external('https://t.me/CosmicMeta')}>Telegram</a></div></div><div className="horizon" aria-hidden="true"><span className="planet" /></div></section>
+      <section id="community" className="community section-grid"><div className="community-copy"><h2>Build the <em>next</em><br/>chapter with us.</h2><p>Enter a community of collectors, artists, designers and developers making the Cosmic Meta Multiverse real.</p></div><div className="community-action"><a className="button button-outline" {...external('https://discord.gg/VDpPSrwRvu')}>Enter the community <Arrow diagonal /></a><div className="social-links"><a {...external('https://twitter.com/CosmicMetaX')}>X / Twitter</a><a {...external('https://instagram.com/CosmicMetaDigital')}>Instagram</a><a {...external('https://discord.gg/VDpPSrwRvu')}>Discord</a><a {...external('https://t.me/CosmicMeta')}>Telegram</a></div></div><div className="horizon" aria-hidden="true"><img className="archive-horizon-art" src="/assets/archive-circles-banner.png" alt="" loading="lazy" decoding="async" /><span className="planet" /></div></section>
     </main>
     <footer className="footer section-grid"><a className="brand footer-brand" href="#top"><AtomMark /><span>COSMIC META</span></a><p>Collect the signal. Build the multiverse.</p><div><a {...external('https://cosmic-meta.gitbook.io/cosmic-meta-nft?utm_source=cosmicmeta&utm_medium=u2m.io')}>Read the whitepaper <Arrow diagonal /></a><span>© {new Date().getFullYear()} Cosmic Meta</span></div></footer>
   </div>
