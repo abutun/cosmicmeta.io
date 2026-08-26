@@ -9,7 +9,7 @@ const collections = [
   {
     name: 'Molecules',
     state: 'Minted out',
-    image: '/assets/collection-molecules.png',
+    image: '/assets/collection-molecules-original.webp',
     href: 'https://opensea.io/collection/cosmicmetamolecules',
     links: [
       ['OpenSea', 'https://opensea.io/collection/cosmicmetamolecules'],
@@ -23,7 +23,7 @@ const collections = [
   {
     name: 'Pixel Art',
     state: 'Minted out',
-    image: '/assets/collection-pixel-art.png',
+    image: '/assets/collection-pixel-art-original.webp',
     href: 'https://opensea.io/collection/cosmicmetapixelart',
     links: [
       ['OpenSea', 'https://opensea.io/collection/cosmicmetapixelart'],
@@ -37,7 +37,7 @@ const collections = [
   {
     name: 'War Chicks',
     state: 'Free mint live',
-    image: '/assets/collection-war-chicks.png',
+    image: '/assets/collection-war-chicks-original.webp',
     href: 'https://mint.cosmicmeta.io/',
     actionLabel: 'Mint War Chicks',
     links: [
@@ -52,7 +52,7 @@ const collections = [
   {
     name: 'Circles',
     state: 'Free mint live',
-    image: '/assets/collection-circles.png',
+    image: '/assets/collection-circles-original.webp',
     href: 'https://mint.cosmicmeta.io/',
     actionLabel: 'Mint Circles',
     links: [['Free mint', 'https://mint.cosmicmeta.io/']],
@@ -64,8 +64,8 @@ const utilities = [
   ['Play & Earn', 'High-radioactivity molecules can increase factory production rates in our future play & earn game.'],
   ['Passive Income', '10% of initial sales will be distributed to holders at the end of each phase according to NFTs held.'],
   ['Community', 'A shared space for artists, designers and developers building at the edge of the multiverse.'],
-  ['Early Access', 'Cosmic Meta holders are automatically whitelisted for all upcoming collections.'],
-  ['Support', 'Holder access to NFT advice and smart-contract consultation from the Cosmic Meta team and community.'],
+  ['Early Access', 'Cosmic Meta NFT holders are automatically whitelisted for all upcoming collections.'],
+  ['Support', 'Holder access to NFT advice and smart-contract consultation from the Cosmic Meta NFT team and community.'],
   ['Gifts', 'Giveaways and airdrops are organised at the end of each sales phase.'],
   ['DeFi', 'After War Chicks, Galactica will launch with liquidity, followed by NFT staking rewards.'],
   ['DAO', 'The most active contributors can participate in community life and help guide the project’s direction.'],
@@ -87,7 +87,7 @@ function Header() {
   const [open, setOpen] = useState(false)
   const close = () => setOpen(false)
   return <header className="header"><div className="header-inner">
-    <a className="brand" href="#top" aria-label="Cosmic Meta home" onClick={close}><AtomMark /><span>COSMIC META</span></a>
+    <a className="brand" href="#top" aria-label="Cosmic Meta NFT home" onClick={close}><AtomMark /><span>COSMIC META NFT</span></a>
     <button className="menu-toggle" aria-expanded={open} aria-controls="primary-navigation" onClick={() => setOpen(!open)}><span className="sr-only">Toggle navigation</span><MenuIcon open={open} /></button>
     <nav id="primary-navigation" className={open ? 'nav nav-open' : 'nav'} aria-label="Primary navigation">
       <a href="#collections" onClick={close}>Collections</a>
@@ -129,7 +129,7 @@ function App() {
     <main>
       <section className="hero section-grid"><div className="hero-copy reveal">
         <h1>The universe is<br/>collecting itself.</h1>
-        <p>Collect signals across the Cosmic Meta Multiverse. From molecular structures to pixel artifacts and beyond—each collection is part of something larger.</p>
+        <p>Collect signals across the Cosmic Meta NFT Multiverse. From molecular structures to pixel artifacts and beyond—each collection is part of something larger.</p>
         <a href="#collections" className="button">Explore collections <Arrow /></a>
       </div><div className="hero-art" aria-hidden="true"><div className="orbit-line orbit-line-a"/><div className="orbit-line orbit-line-b"/><img src="/assets/archive-molecule-profile-cutout.png" alt="" fetchPriority="high" decoding="async" /></div>
       </section>
@@ -140,11 +140,11 @@ function App() {
 
       <section id="utility" className="utility section-grid"><div className="utility-copy"><h2>More than a token.</h2><p className="utility-intro">A growing utility layer, designed around the people who hold it.</p><ol className="utility-list">{utilities.map(([title, text], index) => <li key={title} className={title === 'Play & Earn' ? 'utility-active' : ''}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol></div><div className="orbit-wrap"><OrbitDiagram /></div></section>
 
-      <section id="roadmap" className="roadmap section-grid"><h2>The next orbit.</h2><div className="timeline" aria-label="Cosmic Meta roadmap"><div className="timeline-line" />{[['01','Molecules','Complete'],['02','Pixel Art','Complete'],['03','War Chicks','Free mint'],['04','Galactica','Staking & DAO']].map(([number, name, status]) => <div className="timeline-item" key={number}><div className="timeline-number">{number}</div><h3>{name}</h3><p>{status}</p></div>)}</div></section>
+      <section id="roadmap" className="roadmap section-grid"><h2>The next orbit.</h2><div className="timeline" aria-label="Cosmic Meta NFT roadmap"><div className="timeline-line" />{[['01','Molecules','Complete'],['02','Pixel Art','Complete'],['03','War Chicks','Free mint'],['04','Galactica','Staking & DAO']].map(([number, name, status]) => <div className="timeline-item" key={number}><div className="timeline-number">{number}</div><h3>{name}</h3><p>{status}</p></div>)}</div></section>
 
-      <section id="community" className="community section-grid"><div className="community-copy"><h2>Build the <em>next</em><br/>chapter with us.</h2><p>Enter a community of collectors, artists, designers and developers making the Cosmic Meta Multiverse real.</p></div><div className="community-action"><a className="button button-outline" {...external('https://discord.gg/VDpPSrwRvu')}>Enter the community <Arrow diagonal /></a><div className="social-links"><a {...external('https://twitter.com/CosmicMetaX')}>X / Twitter</a><a {...external('https://instagram.com/CosmicMetaDigital')}>Instagram</a><a {...external('https://discord.gg/VDpPSrwRvu')}>Discord</a><a {...external('https://t.me/CosmicMeta')}>Telegram</a></div></div><div className="horizon" aria-hidden="true"><img className="archive-horizon-art" src="/assets/archive-circles-banner.png" alt="" loading="lazy" decoding="async" /><span className="planet" /></div></section>
+      <section id="community" className="community section-grid"><div className="community-copy"><h2>Build the <em>next</em><br/>chapter with us.</h2><p>Enter a community of collectors, artists, designers and developers making the Cosmic Meta NFT Multiverse real.</p></div><div className="community-action"><a className="button button-outline" {...external('https://discord.gg/VDpPSrwRvu')}>Enter the community <Arrow diagonal /></a><div className="social-links"><a {...external('https://twitter.com/CosmicMetaX')}>X / Twitter</a><a {...external('https://instagram.com/CosmicMetaDigital')}>Instagram</a><a {...external('https://discord.gg/VDpPSrwRvu')}>Discord</a><a {...external('https://t.me/CosmicMeta')}>Telegram</a></div></div><div className="horizon" aria-hidden="true"><img className="archive-horizon-art" src="/assets/archive-circles-banner.png" alt="" loading="lazy" decoding="async" /><span className="planet" /></div></section>
     </main>
-    <footer className="footer section-grid"><a className="brand footer-brand" href="#top"><AtomMark /><span>COSMIC META</span></a><p>Collect the signal. Build the multiverse.</p><div><a {...external('https://cosmic-meta.gitbook.io/cosmic-meta-nft?utm_source=cosmicmeta&utm_medium=u2m.io')}>Read the whitepaper <Arrow diagonal /></a><span>© {new Date().getFullYear()} Cosmic Meta</span></div></footer>
+    <footer className="footer section-grid"><a className="brand footer-brand" href="#top"><AtomMark /><span>COSMIC META NFT</span></a><p>Collect the signal. Build the multiverse.</p><div><a {...external('https://cosmic-meta.gitbook.io/cosmic-meta-nft?utm_source=cosmicmeta&utm_medium=u2m.io')}>Read the whitepaper <Arrow diagonal /></a><span>© {new Date().getFullYear()} Cosmic Meta NFT</span></div></footer>
   </div>
 }
 
