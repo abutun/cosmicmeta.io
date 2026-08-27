@@ -36,12 +36,9 @@ const collections = [
   },
   {
     name: 'War Chicks',
-    state: 'Free mint live',
+    state: 'Minted out',
     image: '/assets/collection-war-chicks-original.webp',
-    href: 'https://mint.cosmicmeta.io/',
-    actionLabel: 'Mint War Chicks',
     links: [
-      ['Free mint', 'https://mint.cosmicmeta.io/'],
       ['Coinbase', 'https://nft.coinbase.com/collection/ethereum/0xcadb229d7989aa25d35a8eee7539e08e43c55fe8'],
       ['Rarible', 'https://rarible.com/cosmicmetawarchicks'],
       ['Mintable', 'https://mintable.app/store/Cosmic-Meta-War-Chicks-Cosmic-Meta-Multiverse/0xcadb229d7989aa25d35a8eee7539e08e43c55fe8'],
@@ -140,7 +137,7 @@ function App() {
 
       <section id="utility" className="utility section-grid"><div className="utility-copy"><h2>More than a token.</h2><p className="utility-intro">A growing utility layer, designed around the people who hold it.</p><ol className="utility-list">{utilities.map(([title, text], index) => <li key={title} className={title === 'Play & Earn' ? 'utility-active' : ''}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol></div><div className="orbit-wrap"><OrbitDiagram /></div></section>
 
-      <section id="roadmap" className="roadmap section-grid"><h2>The next orbit.</h2><div className="timeline" aria-label="Cosmic Meta NFT roadmap"><div className="timeline-line" />{[['01','Molecules','Complete'],['02','Pixel Art','Complete'],['03','War Chicks','Free mint'],['04','Galactica','Staking & DAO']].map(([number, name, status]) => <div className="timeline-item" key={number}><div className="timeline-number">{number}</div><h3>{name}</h3><p>{status}</p></div>)}</div></section>
+      <section id="roadmap" className="roadmap section-grid"><h2>The next orbit.</h2><div className="timeline" aria-label="Cosmic Meta NFT roadmap"><div className="timeline-line" />{[['01','Molecules','Complete'],['02','Pixel Art','Complete'],['03','War Chicks','Complete'],['04','Galactica','Staking & DAO']].map(([number, name, status]) => <div className="timeline-item" key={number}><div className="timeline-number">{number}</div><h3>{name}</h3><p>{status}</p></div>)}</div></section>
 
       <section id="community" className="community section-grid"><div className="community-copy"><h2>Build the <em>next</em><br/>chapter with us.</h2><p>Enter a community of collectors, artists, designers and developers making the Cosmic Meta NFT Multiverse real.</p></div><div className="community-action"><a className="button button-outline" {...external('https://discord.gg/VDpPSrwRvu')}>Enter the community <Arrow diagonal /></a><div className="social-links"><a {...external('https://twitter.com/CosmicMetaX')}>X / Twitter</a><a {...external('https://instagram.com/CosmicMetaDigital')}>Instagram</a><a {...external('https://discord.gg/VDpPSrwRvu')}>Discord</a><a {...external('https://t.me/CosmicMeta')}>Telegram</a></div></div><div className="horizon" aria-hidden="true"><img className="archive-horizon-art" src="/assets/archive-circles-banner.png" alt="" loading="lazy" decoding="async" /><span className="planet" /></div></section>
     </main>
