@@ -23,7 +23,7 @@ npm run build
 
 ## External links
 
-The page links to Cosmic Meta NFT’s social channels, GitBook whitepaper, verified marketplaces, and Etherscan contracts. Marketplace links are exposed from each collection’s **Verified links** control. War Chicks is minted out; Circles remains available as a free mint through [mint.cosmicmeta.io](https://mint.cosmicmeta.io/). Proposed OpenSea links are intentionally not displayed while unavailable.
+The page links to Cosmic Meta NFT’s social channels, GitBook whitepaper, verified marketplaces, and Etherscan contracts. Marketplace links are exposed from each collection’s **Verified links** control. War Chicks is minted out and available on [OpenSea](https://opensea.io/collection/cosmicmetawarchicks); Circles remains available as a free mint through [mint.cosmicmeta.io](https://mint.cosmicmeta.io/) and is also listed on [OpenSea](https://opensea.io/collection/cosmicmetacircles).
 
 ## Design
 

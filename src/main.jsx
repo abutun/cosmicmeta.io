@@ -38,7 +38,10 @@ const collections = [
     name: 'War Chicks',
     state: 'Minted out',
     image: '/assets/collection-war-chicks-original.webp',
+    href: 'https://opensea.io/collection/cosmicmetawarchicks',
+    actionLabel: 'View War Chicks on OpenSea',
     links: [
+      ['OpenSea', 'https://opensea.io/collection/cosmicmetawarchicks'],
       ['Coinbase', 'https://nft.coinbase.com/collection/ethereum/0xcadb229d7989aa25d35a8eee7539e08e43c55fe8'],
       ['Rarible', 'https://rarible.com/cosmicmetawarchicks'],
       ['Mintable', 'https://mintable.app/store/Cosmic-Meta-War-Chicks-Cosmic-Meta-Multiverse/0xcadb229d7989aa25d35a8eee7539e08e43c55fe8'],
@@ -52,7 +55,10 @@ const collections = [
     image: '/assets/collection-circles-original.webp',
     href: 'https://mint.cosmicmeta.io/',
     actionLabel: 'Mint Circles',
-    links: [['Free mint', 'https://mint.cosmicmeta.io/']],
+    links: [
+      ['Free mint', 'https://mint.cosmicmeta.io/'],
+      ['OpenSea', 'https://opensea.io/collection/cosmicmetacircles'],
+    ],
   },
 ]
 
