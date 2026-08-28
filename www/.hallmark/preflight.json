@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-08-28",
+  "sourceProject": "../",
+  "framework": "React + Vite source; standalone static output in www",
+  "fontStack": "Playfair Display, DM Sans, DM Mono",
+  "palette": "midnight indigo, lavender and lime",
+  "motion": "motion-cut; no motion library detected",
+  "spacing": "single responsive gutter token; Hallmark introduces a named 4-point scale"
+}

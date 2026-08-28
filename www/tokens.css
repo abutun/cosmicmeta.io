@@ -1,0 +1,62 @@
+:root {
+  --color-paper: oklch(13% 0.026 286);
+  --color-paper-2: oklch(17% 0.03 286);
+  --color-paper-3: oklch(22% 0.034 286);
+  --color-ink: oklch(94% 0.02 286);
+  --color-ink-2: oklch(78% 0.025 286);
+  --color-muted: oklch(63% 0.025 286);
+  --color-rule: oklch(36% 0.035 286);
+  --color-rule-strong: oklch(51% 0.06 286);
+  --color-accent: oklch(89% 0.21 126);
+  --color-accent-ink: oklch(18% 0.042 286);
+  --color-focus: oklch(91% 0.2 126);
+  --color-signal: oklch(70% 0.15 292);
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-outlier: "IBM Plex Mono", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.563rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-4xl: 3.815rem;
+  --text-display: clamp(3rem, 6vw + 1rem, 5.5rem);
+  --text-display-s: clamp(2.4rem, 4vw + 1rem, 4.3rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 200ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-focus: 3px;
+  --radius-card: 0.75rem;
+  --radius-pill: 999px;
+  --touch-target: 2.75rem;
+  --page-max: 90rem;
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --banner-height: 4rem;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-sticky-nav: 300;
+}
