@@ -76,6 +76,8 @@ img { display: block; max-inline-size: 100%; }
 .utility-sheet > div { border-block-end: var(--rule-hair) solid var(--color-rule); display: grid; gap: var(--space-xs); padding-block: var(--space-md); }
 .utility-sheet dt { color: var(--color-accent); font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; letter-spacing: -0.03em; }
 .utility-sheet dd { color: var(--color-ink-2); margin: 0; max-inline-size: 45ch; }
+.legacy-note { border-block-end: var(--rule-hair) solid var(--color-rule); color: var(--color-muted); font-size: var(--text-sm); padding-block: var(--space-lg) var(--space-sm); }
+.legacy-note p { margin: 0 0 var(--space-xs); max-inline-size: 45ch; }
 
 .roadmap { padding-block: var(--space-3xl) var(--space-4xl); }
 .roadmap-track { border-block-start: var(--rule-hair) solid var(--color-rule-strong); display: grid; gap: var(--space-xl); list-style: none; margin: var(--space-2xl) 0 0; padding: var(--space-xl) 0 0; }
