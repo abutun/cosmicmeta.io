@@ -15,11 +15,15 @@ Create a production build with:
 npm run build
 ```
 
+Vite builds the published site from `www/` into `dist/`. The `www/legacy-status/` page is included as `/legacy-status/` in the production output.
+
 ## Project structure
 
-- `src/main.jsx` — React page structure, collection data, verified external links, and interactive navigation.
-- `src/styles.css` — Design tokens, responsive layouts, utility/roadmap sections, and motion preferences.
-- `public/assets/` — Cosmic Meta NFT artwork used by the hero and collection gallery.
+- `www/index.html` — Published Cosmic Meta NFT landing page.
+- `www/styles.css` and `www/tokens.css` — Design tokens, responsive layouts, and motion preferences.
+- `www/legacy-status/` — Published Legacy Status page.
+- `www/assets/` — Cosmic Meta NFT artwork used by the hero and collection gallery.
+- `vite.config.js` — Multi-page Vite build configuration that emits `dist/`.
 
 ## External links
 
