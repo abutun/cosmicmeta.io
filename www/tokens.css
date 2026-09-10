@@ -11,6 +11,9 @@
   --color-accent-ink: oklch(18% 0.042 286);
   --color-focus: oklch(91% 0.2 126);
   --color-signal: oklch(70% 0.15 292);
+  --color-atlas-gold: oklch(76% 0.09 76);
+  --color-atlas-copper: oklch(58% 0.08 58);
+  --color-atlas-ink: oklch(19% 0.024 256);
 
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "IBM Plex Sans", sans-serif;
