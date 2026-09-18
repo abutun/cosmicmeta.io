@@ -114,6 +114,8 @@ img { display: block; max-inline-size: 100%; }
 .community { border-block-start: var(--rule-hair) solid var(--color-rule); display: grid; gap: var(--space-2xl); padding-block: var(--space-3xl); }
 .community h2 { max-inline-size: 18ch; }
 .community-actions { display: grid; gap: var(--space-xl); }
+.community-invite { color: var(--color-ink-2); font-size: var(--text-md); margin: 0; max-inline-size: 34ch; }
+.community-main-actions { align-items: center; display: flex; flex-wrap: wrap; gap: var(--space-lg); }
 .community-primary { justify-self: start; padding-inline: var(--space-lg); }
 .social-list { display: flex; flex-wrap: wrap; gap: var(--space-md); }
 .social-list a { color: var(--color-ink-2); font-size: var(--text-sm); min-block-size: var(--touch-target); padding-block: var(--space-sm); white-space: nowrap; }
